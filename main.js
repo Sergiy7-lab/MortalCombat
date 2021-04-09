@@ -95,11 +95,6 @@ function changeHp(player) {
   player.hp -= random();
   $playerLife.style.width = player.hp + "%";
 
-  // $randButton.disabled = true;
-  // setTimeout(function () {
-  //   $randButton.disabled = false;
-  // }, 500);
-
   if (player.hp <= 1) {
     player.hp = 0;
     $playerLife.style.width = player.hp + "%";
